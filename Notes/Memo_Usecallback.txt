@@ -1,0 +1,25 @@
+React memo is related to func components / it stops rerender if value of existing component isn't change
+It can be used with simple types beacuase with copy of reference doesn't work correctly
+
+const TestMemo = React.memo(() => {
+  console.log('rerender testowego komponentu');
+  return <h2>Memo test</h2>;
+});
+
+if we change text in TestMemo component then it will rerender 
+
+/////////////////////////
+
+useCallback is related to functions
+it stops render value if different component will be changed
+we set the value when the func will rerender
+
+/////////////////////////
+
+useMemo is realated to functions / it depends on state of parent component
+
+useMemo(() => {
+        function 
+      }, [toursList])
+
+ if channge in component state is related with state in [] then function inside useMemo will be updated

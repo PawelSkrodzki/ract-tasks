@@ -1,0 +1,5 @@
+Model View Controller
+
+M - structure data description and relations between them
+V - interface (user view)
+C - business logic
